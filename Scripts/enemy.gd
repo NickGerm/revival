@@ -3,7 +3,7 @@ class_name enemy extends CharacterBody2D
 @export var speed = 400
 var start_x
 var direction = 0
-var enemyType = 3
+@export var enemyType = 3
 var bounce = 0
 @export var wave_amplitude: float = 150.0
 @export var wave_frequency: float = 0.5
