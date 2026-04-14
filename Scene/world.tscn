@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ot8qxha2ea8c"]
+
+[ext_resource type="Script" uid="uid://ba1vf0us5dpar" path="res://Scripts/world.gd" id="1_dlwip"]
+[ext_resource type="PackedScene" uid="uid://cewfswsd804jp" path="res://Scene/ship.tscn" id="1_emx41"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_dlwip")
+
+[node name="Ship" parent="." instance=ExtResource("1_emx41")]
+position = Vector2(616, 596)
