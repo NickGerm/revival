@@ -1,4 +1,4 @@
-extends CharacterBody2D
+class_name ship extends CharacterBody2D
 
 
 const speed = 800

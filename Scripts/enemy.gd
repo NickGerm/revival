@@ -8,6 +8,7 @@ var bounce = 0
 @export var wave_amplitude: float = 150.0
 @export var wave_frequency: float = 0.5
 @export var phase_offset: float
+var ranDirection = randi_range(1,2)
 var time_passed: float = 0.0 # Starts at 0.0 for every NEW enemy
 
 func _physics_process(delta: float) -> void:
@@ -41,7 +42,7 @@ func _physics_process(delta: float) -> void:
 		if (direction == 2):
 			global_position.x -= speed * delta
 		if (direction == 0):
-			var ranDirection = randi_range(1,2)
+			
 			if (ranDirection == 1):
 				global_position.x += speed * delta
 			if (ranDirection == 2):
@@ -62,3 +63,12 @@ func _ready() -> void:
 			direction = 1
 		if (start_x > 800):
 			direction = 2
+			
+func _on_body_entered(body):
+	print ("made it here")
+	if body is ship:
+		body.death()
+	if body is laser:
+		body.queue_free()
+		self.queue_free()
+	

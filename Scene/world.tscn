@@ -6,5 +6,23 @@
 [node name="World" type="Node2D"]
 script = ExtResource("1_dlwip")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -59.0
+offset_top = -68.0
+offset_right = 1264.0
+offset_bottom = 692.0
+color = Color(0, 0, 0, 1)
+
 [node name="Ship" parent="." instance=ExtResource("1_emx41")]
-position = Vector2(616, 596)
+position = Vector2(609, 546)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(451, -68)
+amount = 100
+lifetime = 19.09
+preprocess = 5.27
+emission_shape = 3
+emission_rect_extents = Vector2(1000, 1)
+gravity = Vector2(0, 50)
+scale_amount_min = 6.15
+scale_amount_max = 11.31
