@@ -20,7 +20,7 @@ func _ready() -> void:
 
 func createEnemy():
 	var enemy_instance = enemy.instantiate()
-	enemy_instance.enemyType = 2
+	enemy_instance.enemyType = 1
 	add_child(enemy_instance)
 	pass
 func createEnemyDifferent():
@@ -31,4 +31,5 @@ func createEnemyDifferent():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	$RichTextLabel.text = str(Global.score)
 	pass

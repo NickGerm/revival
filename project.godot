@@ -14,6 +14,10 @@ config/name="SpaceShooter"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://Scripts/global.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"

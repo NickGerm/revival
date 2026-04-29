@@ -15,6 +15,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="Ship" parent="." instance=ExtResource("1_emx41")]
 position = Vector2(609, 546)
+collision_mask = 0
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 position = Vector2(451, -68)
@@ -26,3 +27,11 @@ emission_rect_extents = Vector2(1000, 1)
 gravity = Vector2(0, 50)
 scale_amount_min = 6.15
 scale_amount_max = 11.31
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 824.0
+offset_top = 24.0
+offset_right = 1138.0
+offset_bottom = 111.0
+theme_override_font_sizes/normal_font_size = 49
+text = "Hello"
